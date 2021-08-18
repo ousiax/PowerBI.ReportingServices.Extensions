@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0DBE330A-0DC6-47B6-9324-EC5FE3C84C1D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PowerBI.ReportingServices.Security", "src\PowerBI.ReportingServices.Security\PowerBI.ReportingServices.Security.csproj", "{19233748-EDAD-4CB0-AEA3-1B4F548EAF91}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{19233748-EDAD-4CB0-AEA3-1B4F548EAF91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19233748-EDAD-4CB0-AEA3-1B4F548EAF91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19233748-EDAD-4CB0-AEA3-1B4F548EAF91}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{19233748-EDAD-4CB0-AEA3-1B4F548EAF91}.Debug|x64.Build.0 = Debug|Any CPU
+		{19233748-EDAD-4CB0-AEA3-1B4F548EAF91}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{19233748-EDAD-4CB0-AEA3-1B4F548EAF91}.Debug|x86.Build.0 = Debug|Any CPU
+		{19233748-EDAD-4CB0-AEA3-1B4F548EAF91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19233748-EDAD-4CB0-AEA3-1B4F548EAF91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19233748-EDAD-4CB0-AEA3-1B4F548EAF91}.Release|x64.ActiveCfg = Release|Any CPU
+		{19233748-EDAD-4CB0-AEA3-1B4F548EAF91}.Release|x64.Build.0 = Release|Any CPU
+		{19233748-EDAD-4CB0-AEA3-1B4F548EAF91}.Release|x86.ActiveCfg = Release|Any CPU
+		{19233748-EDAD-4CB0-AEA3-1B4F548EAF91}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{19233748-EDAD-4CB0-AEA3-1B4F548EAF91} = {0DBE330A-0DC6-47B6-9324-EC5FE3C84C1D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D69A9D5A-93D3-4597-BDAB-8B9BA979F86F}
+	EndGlobalSection
+EndGlobal

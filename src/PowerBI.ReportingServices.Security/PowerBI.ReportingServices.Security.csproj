@@ -1,0 +1,67 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\202108120738491_user-account-v1.0.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202108120738491_user-account-v1.0.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EntityFramework" Version="6.4.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>C:\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>C:\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection">
+      <HintPath>C:\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions">
+      <HintPath>C:\Program Files\Microsoft Power BI Report Server\PBIRS\Portal\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportingServices.Interfaces">
+      <HintPath>C:\Program Files\Microsoft Power BI Report Server\PBIRS\ReportServer\bin\Microsoft.ReportingServices.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Web" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  
+  <ItemGroup>
+    <EmbeddedResource Update="Migrations\202108120738491_user-account-v1.0.resx">
+      <DependentUpon>202108120738491_user-account-v1.0.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Sso.aspx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
