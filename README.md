@@ -1,6 +1,3 @@
-- TOC
-{:toc}
-
 # Prerequisites
 
 - [.NET Framework 4.8 Developer Pack](https://dotnet.microsoft.com/download/dotnet-framework/net48)
@@ -140,35 +137,6 @@ PowerBI.ReportingServices.Security.pdb   Sso.aspx
     <!--<Extension Name="Windows" Type="Microsoft.ReportingServices.Authentication.WindowsAuthentication, Microsoft.ReportingServices.Authorization"/>-->
   </Authentication>
   ```
-[//]: # // === To modify the `rssrvpolicy.config` file
-[//]: # 
-[//]: # // * You will need to add a code group for your custom security extension that grants FullTrust permission for your extension. You do this by adding the code group to the `rssrvpolicy.config` file.
-[//]: # // * Open the `rssrvpolicy.config` file located in the `<install>\ReportServer` directory.
-[//]: # // * Add the following `<CodeGroup>` element after the existing code group in the security policy file that has a URL membership of `$CodeGen$/*` as indicated below and then add an entry as follows to `rssrvpolicy.config`. Make sure to change the below path according to your ReportServer installation directory:
-[//]: # // +
-[//]: # // [source,xml]
-[//]: # // ----
-[//]: # // <CodeGroup
-[//]: # //   class="UnionCodeGroup"
-[//]: # //   version="1"
-[//]: # //   PermissionSetName="FullTrust">
-[//]: # //   <IMembershipCondition
-[//]: # //     class="UrlMembershipCondition"
-[//]: # //     version="1"
-[//]: # //     Url="$CodeGen$/*" />
-[//]: # // </CodeGroup>
-[//]: # // <CodeGroup
-[//]: # //   class="UnionCodeGroup"
-[//]: # //   version="1"
-[//]: # //   PermissionSetNameName="SecurityExtensionCodeGroup"
-[//]: # //   Description="Code group for the reporservices security extension"
-[//]: # //   PermissionSetName="FullTrust">
-[//]: # //   <IMembershipCondition
-[//]: # //     class="UrlMembershipCondition"
-[//]: # //     version="1"
-[//]: # //     Url="C:\Program Files\Microsoft Power BI Report Server\PBIRS\ReportServer\bin\PowerBI.ReportingServices.Security.dll" />
-[//]: # // </CodeGroup>
-[//]: # // ----
 
 ### To modify the `web.config` file for Report Server
 
