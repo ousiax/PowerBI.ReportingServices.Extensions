@@ -1,4 +1,4 @@
-I have write a blog post at https://blog.codefarm.me/2021/08/18/powerbi-report-server-with-cas/, which is more readable than the follow README markdown.
+I have wrote a blog post at https://blog.codefarm.me/2021/08/18/powerbi-report-server-with-cas/, which is more readable than the follow README markdown.
 
 # Prerequisites
 
