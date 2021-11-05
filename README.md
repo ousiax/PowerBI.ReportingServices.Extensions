@@ -1,3 +1,5 @@
+I have write a blog post at https://blog.codefarm.me/2021/08/18/powerbi-report-server-with-cas/, which is more readable than the follow README markdown.
+
 # Prerequisites
 
 - [.NET Framework 4.8 Developer Pack](https://dotnet.microsoft.com/download/dotnet-framework/net48)
@@ -73,6 +75,24 @@ Time Elapsed 00:00:03.51
 **Debugging**
 
 To debug the extension, you might want to attach the debugger to both `ReportingServicesService.exe`, `RSPortal.exe` and `RSPowerBI.exe`. And add breakpoints to the methods implementing the interface `IAuthenticationExtension2` and `IAuthorizationExtension`.
+
+**Troubleshooting**
+
+If the report server cann't work expectedly, you may need to analyze the reprot server log files at `<install>/LogFiles`, especially the following highlight files :
+
+```connsole
+$ ls -1 LogFiles/
+ASManagedRoot_2021_11_05_09_56_18.log
+FlightRecorderCurrent.trc
+msmdsrv.log
+ReportingServicesService_2021_11_05_09_56_17.log
+ReportingServicesWMI_2021_11_05_09_54_26.log
+RSHostingService_2021_11_05_09_55_46.log
+RSManagement_2021_11_05_09_55_47.log
+RSOffice_2021_11_05_09_56_17.log
+RSPortal_2021_11_05_09_56_17.log
+RSPowerBI_2021_11_05_09_56_17.log
+```
 
 ## Step 2: Deployment and Configuration
 
